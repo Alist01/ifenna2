@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container
+{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    /* flex-direction: row; */
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.box-1
+{
+    width: 50%;
+    height: 80%;
+    background-color: aliceblue;
+}
+
+.box-2
+{
+    width: 50%;
+    height: 80%;
+    background-color: greenyellow;
+}
+
+button
+{
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    box-shadow: none;
+    cursor: pointer;
+    margin: 30px 0 10px 30px;
+    font-size: 20px;
+    transition-property: all 2s ease-in;
+}
+
+button:hover
+{
+    background-color: white;
+    transition: 1s linear;
+    color: red;
+    width: 120px;
+    height: 60px;
+}
+
+.circle
+{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* utility classes */
+.animate
+{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* .animate.animate--infinite
+{
+    animation-iteration-count: infinite;
+} */
+
+/* .animate.animate.slow */
+
+@keyframes bounce
+{
+    0%
+   
+    {transform: translateY(0);
+}
+
+20%
+{
+    transform: translateY(-60px);
+}
+
+40%
+{
+    transform: translateY(-30px);
+}
+
+60%
+{
+    transform: translateY(-15px);
+}
+
+80%
+{
+    transform: translateY(0);
+}
+}
+.bounce
+{
+    animation-name: bounce;
+}
